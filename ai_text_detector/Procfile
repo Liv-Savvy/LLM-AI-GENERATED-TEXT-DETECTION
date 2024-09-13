@@ -1,1 +1,1 @@
-web: gunicorn ai_text_detector.wsgi --log-file -
+   web: waitress-serve --port=$PORT ai_text_detector.wsgi:application
